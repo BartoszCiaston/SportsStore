@@ -1,0 +1,2 @@
+./Razor/bin/**
+./Razor/obj/**
