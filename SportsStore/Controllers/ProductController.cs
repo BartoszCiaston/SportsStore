@@ -9,7 +9,7 @@ namespace SportsStore.Controllers
 {
     public class ProductController : Controller
     {
-        public IProductRepository repository;
+        private IProductRepository repository;
         public ProductController (IProductRepository repo)
         {
             repository = repo;
