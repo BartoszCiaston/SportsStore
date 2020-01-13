@@ -75,7 +75,7 @@ namespace SportsStore.Models
                     },
                     new Product
                     {
-                        Name = "Błyszczaący król",
+                        Name = "Błyszczący król",
                         Description = "Figura pokryta złotem i wysadzana diamentami",
                         Category = "Szachy",
                         Price = 1200
