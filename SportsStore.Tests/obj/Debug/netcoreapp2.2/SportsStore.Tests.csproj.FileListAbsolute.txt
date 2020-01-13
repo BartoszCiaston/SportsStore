@@ -9,3 +9,11 @@ D:\GIT\SportsStore\SportsStore.Tests\obj\Debug\netcoreapp2.2\SportsStore.Tests.c
 D:\GIT\SportsStore\SportsStore.Tests\obj\Debug\netcoreapp2.2\SportsStore.Tests.csproj.CoreCompileInputs.cache
 D:\GIT\SportsStore\SportsStore.Tests\obj\Debug\netcoreapp2.2\SportsStore.Tests.AssemblyInfoInputs.cache
 D:\GIT\SportsStore\SportsStore.Tests\obj\Debug\netcoreapp2.2\SportsStore.Tests.AssemblyInfo.cs
+D:\GIT\SportsStore\SportsStore.Tests\bin\Debug\netcoreapp2.2\SportsStore.Views.dll
+D:\GIT\SportsStore\SportsStore.Tests\bin\Debug\netcoreapp2.2\SportsStore.Views.pdb
+D:\GIT\SportsStore\SportsStore.Tests\bin\Debug\netcoreapp2.2\SportsStore.dll
+D:\GIT\SportsStore\SportsStore.Tests\bin\Debug\netcoreapp2.2\SportsStore.pdb
+D:\GIT\SportsStore\SportsStore.Tests\obj\Debug\netcoreapp2.2\SportsStore.Tests.csproj.CopyComplete
+D:\GIT\SportsStore\SportsStore.Tests\bin\Debug\netcoreapp2.2\SportsStore.Tests.pdb
+D:\GIT\SportsStore\SportsStore.Tests\obj\Debug\netcoreapp2.2\SportsStore.Tests.dll
+D:\GIT\SportsStore\SportsStore.Tests\obj\Debug\netcoreapp2.2\SportsStore.Tests.pdb
