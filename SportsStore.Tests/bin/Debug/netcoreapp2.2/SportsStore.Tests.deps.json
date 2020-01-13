@@ -9,6 +9,7 @@
       "SportsStore.Tests/1.0.0": {
         "dependencies": {
           "Microsoft.AspNet.Mvc": "5.2.7",
+          "Microsoft.AspNet.Razor": "3.2.7",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "Microsoft.NET.Test.Sdk": "16.0.1",
           "Moq": "4.13.1",
