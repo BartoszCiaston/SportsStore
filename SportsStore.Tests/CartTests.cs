@@ -96,5 +96,26 @@ namespace SportsStore.Tests
             //Asserts.
             Assert.Equal(450M, result);
         }
+
+        [Fact]
+        public void Can_Clear_Contents()
+        {
+            //Arrange - create test products.
+            Product p1 = new Product { ProductID = 1, Name = "P1", Price = 100M };
+            Product p2 = new Product { ProductID = 2, Name = "P2", Price = 50M };
+
+            //Arrange - create cart.
+            Cart target = new Cart();
+
+            //Arrange - add products to cart.
+            target.AddItem(p1, 1);
+            target.AddItem(p2, 1);
+
+            //Act.
+            target.Clear();
+
+            //Asserts.
+            Assert.Equal(0, target.Lines.Count());
+        }
     }
 }
