@@ -23,8 +23,13 @@ using SportsStore.Models.ViewModels;
 
 #line default
 #line hidden
+#line 3 "D:\GIT\SportsStore\SportsStore\Views\_ViewImports.cshtml"
+using SportsStore.Infrastructure;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"385d5e5d12526ae5842f7bb09db82a0c05818298", @"/Views/Shared/Components/NavigationMenu/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"769cd5025a6bfc1d8dfd5b28c70207f57767092e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6f2639e733a5a5462dc6a72158fc99ad108abc7d", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_NavigationMenu_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<string>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-block btn-secondary"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -58,7 +63,7 @@ using SportsStore.Models.ViewModels;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(30, 142, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "385d5e5d12526ae5842f7bb09db82a0c058182984922", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "385d5e5d12526ae5842f7bb09db82a0c058182985056", async() => {
                 BeginContext(147, 21, true);
                 WriteLiteral("\r\n    Strona główna\r\n");
                 EndContext();
@@ -98,7 +103,7 @@ using SportsStore.Models.ViewModels;
             WriteLiteral("    ");
             EndContext();
             BeginContext(220, 258, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "385d5e5d12526ae5842f7bb09db82a0c058182987398", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "385d5e5d12526ae5842f7bb09db82a0c058182987532", async() => {
                 BeginContext(453, 10, true);
                 WriteLiteral("\r\n        ");
                 EndContext();
