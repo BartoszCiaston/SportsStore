@@ -25,3 +25,4 @@ D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Product\List.
 D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
 D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
 D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ProductSummary.g.cshtml.cs
+D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\NavigationMenu\Default.g.cshtml.cs
