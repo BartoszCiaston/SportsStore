@@ -14450,11 +14450,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GIT\\SportsStore\\SportsStore\\SportsStore.csproj",
+      "projectUniqueName": "d:\\GIT\\SportsStore\\SportsStore\\SportsStore.csproj",
       "projectName": "SportsStore",
-      "projectPath": "D:\\GIT\\SportsStore\\SportsStore\\SportsStore.csproj",
+      "projectPath": "d:\\GIT\\SportsStore\\SportsStore\\SportsStore.csproj",
       "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
-      "outputPath": "D:\\GIT\\SportsStore\\SportsStore\\obj\\",
+      "outputPath": "d:\\GIT\\SportsStore\\SportsStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
