@@ -40,5 +40,37 @@ namespace SportsStore.Tests
             Assert.False(result.ViewData.ModelState.IsValid);
 
         }
+
+        [Fact]
+        public void Cannot_Checkout_Invalid_ShippingDetails()
+        {
+            //Arrange - create repository imitation.
+            Mock<IOrderRepository> mock = new Mock<IOrderRepository>();
+
+            //Arrange - create cart with product.
+            Cart cart = new Cart();
+            cart.AddItem(new Product(), 1);
+
+            //Arrange - create controller object.
+            OrderController target = new OrderController(mock.Object, cart);
+
+            //Arrange - add error to model.
+            target.ModelState.AddModelError("error", "error");
+
+
+            //Act - order checkout attempt.
+            ViewResult result = target.Checkout(new Order()) as ViewResult;
+
+
+            //Asserts - check if order wasn't transfered to repository.
+            mock.Verify(m => m.SaveOrder(It.IsAny<Order>()), Times.Never);
+
+            //Asserts - check if method returns default view.
+            Assert.True(string.IsNullOrEmpty(result.ViewName));
+
+            //Asserts - check if incorrect model is transfered to view.
+            Assert.False(result.ViewData.ModelState.IsValid);
+
+        }
     }
 }
