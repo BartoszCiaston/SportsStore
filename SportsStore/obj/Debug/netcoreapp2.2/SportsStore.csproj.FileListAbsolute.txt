@@ -28,3 +28,4 @@ D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Produc
 D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\NavigationMenu\Default.g.cshtml.cs
 D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Cart\Index.g.cshtml.cs
 D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\CartSummary\Default.g.cshtml.cs
+D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Order\Checkout.g.cshtml.cs
