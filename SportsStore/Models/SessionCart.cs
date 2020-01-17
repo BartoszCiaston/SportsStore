@@ -31,7 +31,7 @@ namespace SportsStore.Models
         public override void RemoveLine(Product product)
         {
             base.RemoveLine(product);
-            Session.SetJson("Cart", this)
+            Session.SetJson("Cart", this);
         }
 
         public override void Clear()
