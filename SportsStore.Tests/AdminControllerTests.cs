@@ -63,6 +63,27 @@ namespace SportsStore.Tests
             Assert.Equal(3, p3.ProductID);
         }
 
+        [Fact]
+        public void Cannot_Edit_Nonexistent_Product()
+        {
+            //Arrange - create repository imitation.
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new Product[]
+            {
+                new Product { ProductID = 1, Name = "P1"},
+                new Product { ProductID = 2, Name = "P2"},
+                new Product { ProductID = 3, Name = "P3"}
+            }.AsQueryable<Product>());
+
+            //Arrange - create controller.
+            AdminController target = new AdminController(mock.Object);
+
+            //Act.
+            Product result = GetViewModel<Product>(target.Edit(4));
+
+            Assert.Null(result);
+        }
+
         private T GetViewModel<T>(IActionResult result) where T : class
         {
             return (result as ViewResult)?.ViewData.Model as T;
