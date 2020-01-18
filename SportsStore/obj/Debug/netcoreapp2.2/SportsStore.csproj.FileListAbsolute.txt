@@ -31,3 +31,4 @@ D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Compon
 D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Order\Checkout.g.cshtml.cs
 D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Order\Completed.g.cshtml.cs
 D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Order\List.g.cshtml.cs
+D:\GIT\SportsStore\SportsStore\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_AdminLayout.g.cshtml.cs
