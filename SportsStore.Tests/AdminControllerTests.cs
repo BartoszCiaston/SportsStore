@@ -103,6 +103,7 @@ namespace SportsStore.Tests
             //Arrange - create product.
             Product product = new Product { Name = "Test" };
 
+
             //Act - attempt to save product.
             IActionResult result = target.Edit(product);
 
@@ -112,6 +113,31 @@ namespace SportsStore.Tests
             //Asserts - verify return type.
             Assert.IsType<RedirectToActionResult>(result);
             Assert.Equal("Index", (result as RedirectToActionResult).ActionName);
+        }
+
+        [Fact]
+        public void Cannot_Save_Invalid_Changes()
+        {
+            //Arrange - create repository imitation.
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+
+            //Arrange - create controller.
+            AdminController target = new AdminController(mock.Object);
+
+            //Arrange - create product.
+            Product product = new Product { Name = "Test" };
+
+            //Arrange - add error to model state.
+            target.ModelState.AddModelError("error", "error");
+
+            //Act - attempt to save product.
+            IActionResult result = target.Edit(product);
+
+            //Asserts - verify if repository wasn't called out.
+            mock.Verify(m => m.SaveProduct(It.IsAny<Product>()), Times.Never());
+
+            //Asserts - verify return type.
+            Assert.IsType<ViewResult>(result);
         }
 
         private T GetViewModel<T>(IActionResult result) where T : class
