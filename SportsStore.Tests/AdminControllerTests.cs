@@ -140,6 +140,30 @@ namespace SportsStore.Tests
             Assert.IsType<ViewResult>(result);
         }
 
+        [Fact]
+        public void Can_Delete_Valid_Products()
+        {
+            //Arrange - create product.
+            Product prod = new Product { ProductID = 2, Name = "Test" };
+
+            //Arrange - create repository imitation.
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new Product[] {
+            new Product {ProductID = 1, Name = "P1" },
+            new Product {ProductID = 3, Name = "P3" }
+            }.AsQueryable<Product>());
+
+            //Arrange - create controller.
+            AdminController target = new AdminController(mock.Object);
+
+            //Act - delete product.
+            target.Delete(prod.ProductID);
+
+            //Asserts - make sure that repository method was called out with correct product
+            mock.Verify(m => m.DeleteProduct(prod.ProductID));
+
+        }
+
         private T GetViewModel<T>(IActionResult result) where T : class
         {
             return (result as ViewResult)?.ViewData.Model as T;
