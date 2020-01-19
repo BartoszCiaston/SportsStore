@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Moq;
 using SportsStore.Controllers;
 using SportsStore.Models;
@@ -82,6 +83,35 @@ namespace SportsStore.Tests
             Product result = GetViewModel<Product>(target.Edit(4));
 
             Assert.Null(result);
+        }
+
+        [Fact]
+        public void Can_Save_Valid_Changes()
+        {
+            //Arrange - create repository imitation.
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+
+            //Arrange - create TempData dictionary imitation.
+            Mock<ITempDataDictionary> tempData = new Mock<ITempDataDictionary>();
+
+            //Arrange - create controller.
+            AdminController target = new AdminController(mock.Object)
+            {
+                TempData = tempData.Object
+            };
+
+            //Arrange - create product.
+            Product product = new Product { Name = "Test" };
+
+            //Act - attempt to save product.
+            IActionResult result = target.Edit(product);
+
+            //Asserts - verify if repository was called out.
+            mock.Verify(m => m.SaveProduct(product));
+
+            //Asserts - verify return type.
+            Assert.IsType<RedirectToActionResult>(result);
+            Assert.Equal("Index", (result as RedirectToActionResult).ActionName);
         }
 
         private T GetViewModel<T>(IActionResult result) where T : class
